@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/fdv_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:theme="@style/ToolBarStyle"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:layout_alignParentTop="true"
+            >
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_arrow_back_white_24dp"
+                android:id="@+id/fdv_back_button"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="48dp"
+                android:text="@string/firm_info"
+                android:textColor="@color/white"
+                android:id="@+id/fev_title"
+                />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/fdv_name"
+        style="@style/TitleBoldBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="@dimen/simple_view_margin_side"
+        android:layout_marginRight="@dimen/simple_view_margin_side"
+        android:layout_marginTop="12dp"
+        android:text="Firm name" />
+
+    <TextView
+        android:id="@+id/fdv_main_rubric"
+        style="@style/BodyRegularBlack"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="@dimen/simple_view_margin_side"
+        android:layout_marginRight="@dimen/simple_view_margin_side"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Main rubric" />
+
+    <TextView
+        android:id="@+id/fdv_floor"
+        style="@style/BodyRegularGray"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="@dimen/simple_view_margin_side"
+        android:layout_marginRight="@dimen/simple_view_margin_side"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Floor" />
+
+</LinearLayout>
